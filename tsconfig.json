@@ -1,0 +1,32 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "baseUrl": "./",
+    "module": "ESNext",
+    "moduleResolution": "nodenext",
+    "rootDir": "./src/",
+    "importsNotUsedAsValues": "error",
+    "noEmit": true,
+    "removeComments": true,
+    "plugins": [
+      {
+        "name": "typescript-eslint-language-service"
+      }
+    ],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
+    "target": "ESNext",
+    "noErrorTruncation": true
+  }
+}
