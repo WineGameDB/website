@@ -3,7 +3,7 @@
 // Helper script to download cover images for all games in the DB
 
 import { existsSync } from 'fs'
-import { readFile, writeFile } from 'fs/promises'
+import { mkdir, readFile, writeFile } from 'fs/promises'
 import { dirname, join } from 'path'
 import sqlJs from 'sql.js'
 import { fileURLToPath } from 'url'
@@ -43,4 +43,5 @@ async function fetchImages(gameTitles: Set<string>) {
   await Promise.allSettled(imageWriters)
 }
 
+await mkdir(join(publicDir, 'gameImages'), { recursive: true })
 await fetchImages(await getTitles())
