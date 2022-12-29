@@ -1,5 +1,4 @@
 dist
 node_modules
 helpers/*.*js
-public/*
 .eslintcache
