@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "yarn refreshImages && rm -rf dist && vite build",
+    "build": "rm -rf dist && vite build",
     "preview": "vite preview",
     "lint": "eslint --cache .",
     "codecheck": "tsc",
