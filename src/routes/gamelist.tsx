@@ -40,7 +40,7 @@ export default function GamesList() {
       <Typography variant='h3' sx={{ mb: 1 }}>
         Game List
       </Typography>
-      <Grid container spacing={1} alignItems='stretch'>
+      <Grid container spacing={1}>
         {games.map((gameTitle) => (
           <Grid xs={2} key={gameTitle}>
             <GameCard title={gameTitle} />
